@@ -1,0 +1,22 @@
+# Solo se envían al constructor los archivos necesarios.
+**
+!Dockerfile
+!.dockerignore
+!gradlew
+!build.gradle
+!settings.gradle
+!gradle/
+!gradle/**
+!src/
+!src/main/
+!src/main/**
+# Nunca copiar configuraciones locales o secretos dentro de la imagen.
+src/main/resources/application-local.*
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/*.jks
+**/*.keystore
